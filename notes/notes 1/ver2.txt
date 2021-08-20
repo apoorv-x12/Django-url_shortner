@@ -1,0 +1,4 @@
+1-- added 'shortner' to installed apps array in settings.py 
+
+2-- go to templates in same file in inside the object to propert DIRS add inside [] this :
+BASE_DIR/'templates'
