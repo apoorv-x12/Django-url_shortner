@@ -1,0 +1,27 @@
+1-- created urls.py in shortner(app folder)
+2-- added these imports statements:
+from django.urls import path
+from . import views
+
+3-- then added this array :
+urlpatterns = [
+    path('', views.index, name='index'),
+]
+
+4-- then go to views.py and added this function :
+
+def index(request):
+    return render(request, 'index.html')
+
+5-- uptill now we did views,urls etc (for app aka) in shortner now we have to integrate urls from shortner 
+to (main app aka) urlshortner.
+
+6-- go to urlshortner's urls.py and change 
+from django.urls import path
+to from django.urls import path, include 
+basically add include in above
+
+7-- then this to urlpatterns :
+path('', include('shortner.urls'))
+
+8-- now --> python manage.py runserver (in gitbash or terminal)
