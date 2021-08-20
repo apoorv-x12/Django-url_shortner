@@ -1,0 +1,26 @@
+
+index.html i added is pre coded i got it from github repo of creator :
+https://github.com/tomitokko/django_url_shortner/tree/main/templates
+
+NOTE ---- at line 63 of index.html there was issue with hover so i changed it.
+--from:
+button {
+  cursor: pointer;
+  flex: 1;
+  background-color: transparent;
+  color: white;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+--above to this:
+button {
+  cursor: pointer;
+  flex: 1;
+  background-color: transparent;
+  color: white;
+
+}
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
